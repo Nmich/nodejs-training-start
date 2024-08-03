@@ -1,0 +1,35 @@
+{
+  "name": "nobleprog-project",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node --env-file=.env src/index.js",
+    "dev": "nodemon --watch src --ext ts --exec 'vite-node src/index.ts'",
+    "build": "tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@fastify/swagger": "^8.15.0",
+    "@fastify/swagger-ui": "^4.0.1",
+    "dotenv": "^16.4.5",
+    "fastify": "^4.27.0",
+    "fastify-type-provider-zod": "^1.2.0",
+    "prisma": "^5.15.1",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^2.24.1",
+    "@tsconfig/node20": "^20.1.4",
+    "@types/node": "^20.12.11",
+    "eslint": "^9.8.0",
+    "nodemon": "^3.1.0",
+    "typescript": "^5.4.5",
+    "vite-node": "^1.6.0"
+  },
+  "packageManager": "pnpm@9.0.6+sha256.0624e30eff866cdeb363b15061bdb7fd9425b17bc1bb42c22f5f4efdea21f6b3"
+}

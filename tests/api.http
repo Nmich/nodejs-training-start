@@ -1,0 +1,17 @@
+@baseUrl = http://localhost:3000
+@apiUrl = {{baseUrl}}/?
+
+@searchUrl = {{baseUrl}}/omdb?s=
+@movieUrl = {{baseUrl}}/media/
+
+@userUrl = {{baseUrl}}/user/
+
+# @name search
+{{searchUrl}}love
+
+###
+
+{{movieUrl}}{{search.response.body.0.imdbID}}
+
+###
+POST {{userUrl}}
